@@ -11,7 +11,7 @@
   --color-neutral-light: #D2D2D2;
   --color-keys: #37474F;
   --color-keys-light: #E5E5E5;
-  --font-size-large: 60px;
+  --font-size-large: 80px;
   --font-size-medium: 20px;
   --transition: all .2s ease-in-out;
 }
@@ -37,8 +37,10 @@ li, ol, ul {
 h2 {
   margin: 0;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Luckiest Guy', cursive;
   font-size: var(--font-size-large);
+  font-weight: 400;
+  letter-spacing: 2px;
   margin: 0;
 }
 
@@ -95,13 +97,14 @@ button {
 
 .show {
   font-size: var(--font-size-medium);
+  font-family: 'Luckiest Guy', cursive;
   height: 65px;
   width: 65px;
   padding: 20px 1px 0 1px;
   margin-right: 2px;
   border-radius: 5px;
   text-transform: uppercase; 
-  color: #000;
+  color: #FFF;
   background-color: #76CE82;
   transition: all 0.5s ease;
 }
@@ -121,6 +124,7 @@ button {
 }
 
 .btn__reset {
+  font-family: 'Open Sans', bold;
   padding: 8px;
   margin: 50px auto;
   background: #FFFFFF;

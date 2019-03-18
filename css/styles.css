@@ -12,7 +12,6 @@
   --color-keys: #37474F;
   --color-keys-light: #E5E5E5;
   --font-size-large: 80px;
-  --font-size-before: 
   --font-size-medium: 20px;
   --transition: all .2s ease-in-out;
 }
@@ -179,6 +178,7 @@ button:hover {
 
 .win {
   background-color: var(--color-win);
+  z-index: 2;
 }
 
 .win a {
@@ -187,6 +187,7 @@ button:hover {
 
 .lose {
   background-color: var(--color-lose);
+  z-index: 2;
 }
 
 .lose a {

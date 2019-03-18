@@ -12,6 +12,7 @@
   --color-keys: #37474F;
   --color-keys-light: #E5E5E5;
   --font-size-large: 80px;
+  --font-size-before: 
   --font-size-medium: 20px;
   --transition: all .2s ease-in-out;
 }
@@ -27,6 +28,7 @@ body {
   flex-direction: column;
   display: flex;
   height: 100vh;
+
 }
 
 li, ol, ul {
@@ -55,6 +57,18 @@ button {
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: ease .2s;
+  box-shadow: 0 1px 8px 0 grey;
+}
+
+.btn__reset:hover {
+  transform: scale(1.1);
+  border: 2px solid var(--color-win);
+  transition: .2s ease-out;
 }
 
 .main-container {
@@ -89,6 +103,7 @@ button {
   color: transparent;
   background: var(--color-neutral-light);
   border-radius: 5px;
+
 }
 
 .space {
@@ -97,7 +112,9 @@ button {
 
 .show {
   font-size: var(--font-size-medium);
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Open Sans', cursive;
+  font-weight: bold;
+  margin-top: 2px;
   height: 65px;
   width: 65px;
   padding: 20px 1px 0 1px;
@@ -107,6 +124,7 @@ button {
   color: #FFF;
   background-color: #76CE82;
   transition: all 0.5s ease;
+  animation: show-letter ease-out 0.4s;
 }
 
 /* Keyboard */
@@ -173,4 +191,19 @@ button {
 
 .lose a {
   color: var(--color-lose);
+}
+
+/* Animation */
+
+@keyframes show-letter {
+  from {
+    opacity: 0;
+    transform: rotate(40deg) scale(2);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+
 }
